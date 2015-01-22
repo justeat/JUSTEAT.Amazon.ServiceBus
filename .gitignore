@@ -1,0 +1,17 @@
+*.user
+*.suo
+*_ReSharper*
+*_NCrunch*
+*.orig
+*.cache
+
+bin
+obj
+out
+
+# Do not include actual packages as they will be extracted either on dev or on build system.
+packages/
+
+# Do not include these specfic configuration files as they will be generated
+src/JE.MobileOrderNotifications.Console/[W|w]eb.config
+src/JE.MobileOrderNotifications.Console/[N|n]log.config

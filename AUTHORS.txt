@@ -1,0 +1,5 @@
+This file contains a list of people who have made significant contributions.                 
+
+Jaimal Chohan <jaimalchohan@gmail.com>
+Payman Labbaf <payman.labbaf@just-eat.com>
+Anton Jefcoate <anton.jefcoate@just-eat.com>

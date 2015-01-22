@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{41C9C948-DD27-4E46-8D3E-C13D80B50C60}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JUSTEAT.Amazon.ServiceBusTests", "src\JUSTEAT.Amazon.ServiceBusTests\JUSTEAT.Amazon.ServiceBusTests.csproj", "{4F841CD4-FE5D-488D-92BE-476BF78FFABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JUSTEAT.Amazon.ServiceBus", "src\JUSTEAT.Amazon.ServiceBus\JUSTEAT.Amazon.ServiceBus.csproj", "{773D1F53-D850-4713-951C-D107503E6E77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JUSTEAT.Amazon.ServiceBusExample", "src\JUSTEAT.Amazon.ServiceBusExample\JUSTEAT.Amazon.ServiceBusExample.csproj", "{4C34D815-8A7B-4615-8445-19543CD3F51C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F841CD4-FE5D-488D-92BE-476BF78FFABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F841CD4-FE5D-488D-92BE-476BF78FFABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F841CD4-FE5D-488D-92BE-476BF78FFABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F841CD4-FE5D-488D-92BE-476BF78FFABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{773D1F53-D850-4713-951C-D107503E6E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773D1F53-D850-4713-951C-D107503E6E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773D1F53-D850-4713-951C-D107503E6E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773D1F53-D850-4713-951C-D107503E6E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C34D815-8A7B-4615-8445-19543CD3F51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C34D815-8A7B-4615-8445-19543CD3F51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C34D815-8A7B-4615-8445-19543CD3F51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C34D815-8A7B-4615-8445-19543CD3F51C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
