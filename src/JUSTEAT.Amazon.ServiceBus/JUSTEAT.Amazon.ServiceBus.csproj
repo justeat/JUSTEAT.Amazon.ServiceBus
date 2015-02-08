@@ -49,7 +49,7 @@
     <Compile Include="SNSToSQSServiceBus.cs" />
     <Compile Include="Publishers\IPublisher.cs" />
     <Compile Include="Receivers\SequentialSQSReceiver.cs" />
-    <Compile Include="Receivers\ConcurrentSequentialSqsReceiver.cs" />
+    <Compile Include="Receivers\ConcurrentSqsReceiver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueueByName.cs" />
     <Compile Include="QueueConfiguration.cs" />

@@ -16,7 +16,7 @@ namespace JUSTEAT.Amazon.ServiceBusExample
 
         public static void Main(string[] args)
         {
-            var receiver = new ConcurrentSequentialSqsReceiver(
+            var receiver = new ConcurrentSqsReceiver(
                 new AmazonSQSClient(), 
                 new QueueByName("justeat-servicebus-example-queue", true),
                 ProcessMessage, 

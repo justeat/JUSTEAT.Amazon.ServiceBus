@@ -8,25 +8,25 @@ using Amazon.SQS.Model;
 
 namespace JUSTEAT.Amazon.ServiceBus.Receivers
 {
-    public class ConcurrentSequentialSqsReceiver : SequentialSQSReceiver
+    public class ConcurrentSqsReceiver : SequentialSQSReceiver
     {
         private readonly List<Task> _activeTasks;
         private long _activeTaskCount;
         private readonly int _maximumNumberOfTasks;
 
-        public ConcurrentSequentialSqsReceiver(IAmazonSQS amazonSQSClient, string queueUrl, Func<Message, bool> onReceived,
+        public ConcurrentSqsReceiver(IAmazonSQS amazonSQSClient, string queueUrl, Func<Message, bool> onReceived,
             Action<Exception, Message> onError, int maxNumberOfMessages = 1, int concurrency = 1)
             : this(amazonSQSClient, new QueueConfiguration(queueUrl), onReceived, onError, maxNumberOfMessages, concurrency)
         {
         }
 
-        public ConcurrentSequentialSqsReceiver(IAmazonSQS amazonSQSClient, QueueByName queueByName, Func<Message, bool> onReceived,
+        public ConcurrentSqsReceiver(IAmazonSQS amazonSQSClient, QueueByName queueByName, Func<Message, bool> onReceived,
             Action<Exception, Message> onError, int maxNumberOfMessages = 1, int concurrency = 1)
             : this(amazonSQSClient, new QueueConfiguration(amazonSQSClient, queueByName), onReceived, onError, maxNumberOfMessages, concurrency)
         {
         }
 
-        public ConcurrentSequentialSqsReceiver(IAmazonSQS amazonSQSClient, QueueConfiguration queueConfiguration, Func<Message, bool> onReceived,
+        public ConcurrentSqsReceiver(IAmazonSQS amazonSQSClient, QueueConfiguration queueConfiguration, Func<Message, bool> onReceived,
             Action<Exception, Message> onError, int maxNumberOfMessages = 1, int concurrency = 1)
             : base(amazonSQSClient, queueConfiguration, onReceived, onError, maxNumberOfMessages)
         {
